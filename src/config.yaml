@@ -1,5 +1,5 @@
 site:
-  name: Davao.Website
+  name: DWDS
   site: 'https://davao.website'
   base: '/'
   trailingSlash: false
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Davao.Website
+    default: DWDS
     template: '%s — Davao Web Development Services'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Affordable, modern, and reliable web solutions for businesses that dream big."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Davao Web Development Services
+    site_name: DWDS — Davao Web Development Services
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: '@dwds_ph'
+    site: '@dwds_ph'
     cardType: summary_large_image
 
 i18n:

@@ -35,9 +35,9 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'Web Development', href: '#' },
-        { text: 'Website Maintenance & Hosting', href: '#' },
-        { text: 'Custom Web Applications', href: '#' },
+        { text: 'Web Development', href: getPermalink('/services/web-development') },
+        { text: 'Website Maintenance & Hosting', href: getPermalink('/services/maintenance-hosting') },
+        { text: 'Custom Web Applications', href: getPermalink('/services/custom-applications') },
       ],
     },
     {
@@ -58,9 +58,9 @@ export const footerData = {
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/davaowebsite' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
+    Made with ❤️ using <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo/astrowind"> AstroWind</a> · All rights reserved.
   `,
 };
