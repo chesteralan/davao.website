@@ -6,7 +6,7 @@ export const headerData = {
       text: 'Home',
       href: getPermalink('/'),
     },
-     {
+    {
       text: 'About Us',
       href: getPermalink('/about'),
     },
@@ -18,7 +18,7 @@ export const headerData = {
       text: 'Blog',
       href: getBlogPermalink(),
     },
-     {
+    {
       text: 'Contact Us',
       href: getPermalink('/contact'),
     },

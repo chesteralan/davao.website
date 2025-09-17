@@ -8,10 +8,10 @@ To get a local copy up and running, please follow these simple steps.
 
 ### Prerequisites
 
-*   npm
-    ```sh
-    npm install npm@latest -g
-    ```
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
 ### Installation
 
@@ -70,10 +70,10 @@ The folder structure of this project is as follows:
 
 ## Technologies Used
 
-*   [Astro](https://astro.build/)
-*   [TypeScript](https://www.typescriptlang.org/)
-*   [Tailwind CSS](https://tailwindcss.com/)
-*   [Prettier](https://prettier.io/)
-*   [ESLint](https://eslint.org/)
-*   [Docker](https://www.docker.com/)
-*   [Nginx](https://www.nginx.com/)
+- [Astro](https://astro.build/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/)
+- [Docker](https://www.docker.com/)
+- [Nginx](https://www.nginx.com/)
