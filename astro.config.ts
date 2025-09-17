@@ -72,7 +72,10 @@ export default defineConfig({
   ],
 
   image: {
-    domains: ['cdn.pixabay.com'],
+    domains: ['cdn.pixabay.com', 'images.unsplash.com'],
+    service: {
+      entrypoint: 'astro/assets/services/noop', // passthrough, no sharp
+    },
   },
 
   markdown: {
