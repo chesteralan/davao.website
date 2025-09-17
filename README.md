@@ -1,4 +1,79 @@
-# 🚀 AstroWind
+# � Davao Web Development Services
+
+## Business Model
+
+**Customer Segments:**
+- SMEs in Davao (shops, restaurants, clinics, cafés)
+- Startups & Entrepreneurs (online stores, new service businesses)
+- NGOs & Institutions (schools, foundations, cooperatives)
+- Professionals (lawyers, doctors, freelancers)
+- Future: Overseas clients (remote contracts, OFWs funding local businesses)
+
+**Value Proposition:**
+- Affordable, professional websites for local businesses
+- Fast deployment using Firebase + React/Next.js
+- Personalized, “Pinoy-first” approach
+- Ongoing maintenance & hosting
+- Scalable solutions (start small, upgrade later)
+
+**Channels:**
+- Website, Facebook, LinkedIn, Google Business
+- Local networks (DTI, Chamber of Commerce Davao)
+- Referrals, partnerships
+
+**Customer Relationships:**
+- Free consultation, explain ROI
+- Ongoing support (maintenance packages)
+- Education (blog posts, webinars)
+- Retention (discounts for upgrades)
+
+**Revenue Streams:**
+- Project-based fees (₱20k–₱200k+)
+- Recurring revenue (₱3k–₁₀k/month)
+- Add-on services (SEO, content, branding)
+- Future: SaaS tools, training/workshops
+
+**Key Resources:**
+- Human: Developer/manager, interns/freelancers
+- Tech: React, Next.js, Firebase, TailwindCSS, Strapi, Vercel
+- Network: Local partners
+
+---
+
+## Business Plan
+
+**Executive Summary:**
+- Sole Proprietorship (DTI-registered), Davao City, PH
+- Services: Custom websites, e-commerce, web apps, maintenance
+- Target: Local SMEs, startups, NGOs, professionals, future international
+- Focus: Affordable, scalable, Firebase-backed projects
+
+**Objectives:**
+- Year 1: Brand presence, 5 recurring clients, portfolio site
+- Years 2–3: Add SEO/social media, 50+ clients, hire team
+- Year 5+: Leading Davao firm, nationwide/international, launch SaaS
+
+**Market Analysis:**
+- Digitization trend, post-pandemic online shift
+- Demand for affordable e-commerce/booking
+- Edge: Lower cost, Firebase expertise, personal approach
+
+**Services:**
+- Web dev, e-commerce, custom apps, maintenance, SEO/social media add-ons
+
+**Operations:**
+- Owner-led, freelance partners
+- Workflow: consult → proposal → dev → test/deploy → maintain
+
+**Financials:**
+- Startup ₱50k–₱100k; Year 1 revenue ~₱600k; break-even 12–15 months
+
+**Growth:**
+- Bundled packages, subscription products, OFW market, IT school partnerships
+
+**Risks:**
+- Competition, client awareness, cash flow; mitigated by education and retainers
+# �🚀 AstroWind
 
 <img src="https://raw.githubusercontent.com/arthelokyo/.github/main/resources/astrowind/lighthouse-score.png" align="right"
      alt="AstroWind Lighthouse Score" width="100" height="358">
