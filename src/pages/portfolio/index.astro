@@ -1,8 +1,12 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import { getCollection } from 'astro:content';
+
+const allPortfolios = await getCollection('portfolio');
+console.log(allPortfolios);
 
 const metadata = {
   title: 'Sales Landing Page Demo',

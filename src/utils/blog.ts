@@ -57,10 +57,10 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     metadata = {},
   } = data;
 
-  const slug = cleanSlug(id); // cleanSlug(rawSlug.split('/').pop());
+  const slug = cleanSlug(id);
   const publishDate = new Date(rawPublishDate);
   const updateDate = rawUpdateDate ? new Date(rawUpdateDate) : undefined;
-
+  const isDraft = draft ? true : publishDate > new Date();
   const category = rawCategory
     ? {
         slug: cleanSlug(rawCategory),
@@ -89,7 +89,7 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     tags: tags,
     author: author,
 
-    draft: draft,
+    draft: isDraft,
 
     metadata,
 

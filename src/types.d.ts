@@ -279,3 +279,13 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
 }
 
 export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}
+
+export interface Portfolio {
+  publishDate: Date;
+  title?: string;
+  slug?: string;
+  image?: string;
+  excerpt?: string;
+  category?: string;
+  metadata?: MetaData;
+}
