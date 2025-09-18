@@ -15,10 +15,6 @@ export const headerData = {
       href: getPermalink('/portfolio'),
     },
     {
-      text: 'Services',
-      href: getPermalink('/services'),
-    },
-    {
       text: 'Blog',
       href: getBlogPermalink(),
     },
@@ -35,7 +31,7 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'Web Development', href: getPermalink('/services/web-development') },
+        { text: 'Website Development', href: getPermalink('/services/website-development') },
         { text: 'Website Maintenance & Hosting', href: getPermalink('/services/maintenance-hosting') },
         { text: 'Custom Web Applications', href: getPermalink('/services/custom-applications') },
       ],
@@ -54,13 +50,11 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/dwds.ph/' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/davaowebsite' },
   ],
   footNote: `
-    Made with ❤️ using <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo/astrowind"> AstroWind</a> · All rights reserved.
+    Made with ❤️ using <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo/astrowind" target="_blank"> AstroWind</a> by <a target="_blank" class="text-blue-600 underline dark:text-muted" href="https://alchie.cc"> Alchie</a> · All rights reserved.
   `,
 };

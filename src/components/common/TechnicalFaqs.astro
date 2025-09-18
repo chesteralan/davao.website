@@ -1,0 +1,75 @@
+---
+import FAQs from "../widgets/FAQs.astro";
+---
+
+<!-- FAQs Widget ******************* -->
+
+<FAQs
+title="Frequently Asked Questions"
+items={[
+    {
+      title: "How much does a website cost?",
+      description: "The cost depends on the size and complexity of your website. Simple sites are more affordable, while custom features and integrations may cost more. We’ll provide a clear quote after understanding your needs."
+    },
+    {
+      title: "How long will it take to build my website?",
+      description: "Most websites take 2–6 weeks, depending on design, features, and how quickly we receive your content and feedback."
+    },
+    {
+      title: "Do I need to provide the content?",
+      description: "You can provide your own text and images, but if needed, we also offer copywriting, stock photos, and graphic design support."
+    },
+    {
+      title: "Will my website work on mobile and tablets?",
+      description: "Yes! All our websites are fully responsive and look great on all devices."
+    },
+    {
+      title: "Can I update the website myself after it’s built?",
+      description: "Yes. We use user-friendly platforms (like WordPress, Webflow, or custom CMS) and provide training so you can easily make updates."
+    },
+    {
+      title: "Do you provide domain and hosting services?",
+      description: "Yes. We can help you register a domain, set up professional email, and provide secure, reliable hosting."
+    },
+    {
+      title: "What if I already have a domain or hosting?",
+      description: "That’s perfectly fine. We’ll connect your website to your existing setup."
+    },
+    {
+      title: "Is my website secure?",
+      description: "Yes. All websites include SSL certificates for encryption, plus security measures to protect against common threats."
+    },
+    {
+      title: "Will the website be fast and optimized?",
+      description: "Absolutely. We optimize images, code, and hosting setup to ensure your site loads quickly."
+    },
+    {
+      title: "Can I add features later (like e-commerce or booking)?",
+      description: "Yes. We build with scalability in mind, so you can easily add new features as your business grows."
+    },
+    {
+      title: "Will the site be SEO-friendly?",
+      description: "Yes. We follow best practices to help your website rank better in search engines, and can also provide advanced SEO services if needed."
+    },
+    {
+      title: "Do you offer ongoing maintenance and updates?",
+      description: "Yes. We offer maintenance packages for updates, backups, and support — or you can manage it yourself with our training."
+    },
+    {
+      title: "What happens if something breaks on my website?",
+      description: "If you’re on a maintenance plan, we’ll fix it right away. If not, you can still reach out and we’ll provide a repair quote."
+    },
+    {
+      title: "Do you provide training?",
+      description: "Yes. We provide basic training and documentation so you know how to manage your website confidently."
+    },
+    {
+      title: "Are there ongoing costs after the website is finished?",
+      description: "Yes. You’ll need to pay for domain, hosting, and any third-party tools (if applicable). We’ll make sure you know all costs upfront."
+    }
+  ]}
+>
+<Fragment slot="bg">
+  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+</Fragment>
+</FAQs>

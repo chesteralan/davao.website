@@ -29,7 +29,7 @@ const metadata = {
         href: '/sign-up',
         icon: 'tabler:arrow-right',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Learn more', href: '#services' },
     ]}
   >
     <Fragment slot="title"> From Davao to the World — Your Digital Partner. </Fragment>
@@ -111,26 +111,27 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="What services do we provide?"
-    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    id="services"
+    title="Our Services"
+    subtitle="Discover a wide range of professionally designed website templates tailored for different industries and purposes — whether for business, portfolios, e-commerce, or blogs. Each template is built to be modern, customizable, and ready to help you establish a strong online presence."
     items={[
       {
         title: 'Website Development',
         description:
-          'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
-        icon: 'flat-color-icons:document',
+          'We design and build fast, responsive, and user-friendly websites tailored to your business goals. Whether you need a sleek company profile or a powerful online store, we ensure your website is modern, secure, and optimized to engage customers.',
+        icon: 'flat-color-icons:template',
       },
       {
         title: 'Website Maintenance & Hosting',
         description:
-          'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
-        icon: 'flat-color-icons:template',
+          'Our team provides reliable hosting and continuous maintenance to keep your website running smoothly. This includes regular updates, security patches, backups, and performance optimization.',
+        icon: 'flat-color-icons:support',
       },
       {
         title: 'Custom Web Applications',
         description:
-          'Providing customer support for any technical issues related to the templates or their implementation.',
-        icon: 'flat-color-icons:voice-presentation',
+          'We develop custom web applications built around your unique business needs — whether it’s an advanced e-commerce platform, a custom CRM system, or specialized tools to streamline your operations.',
+        icon: 'flat-color-icons:idea',
       },
     ]}
   >
@@ -143,43 +144,46 @@ const metadata = {
 
   <Features
     id="features"
-    title="Main features of our templates"
-    subtitle="Possess several key characteristics to effectively cater to the needs of startups and entrepreneurs."
+    title="Additional Services"
+    subtitle="Enhance your website with extra features and support tailored to your business needs. From domain setup to performance optimization, we provide add-on solutions that ensure your online presence is professional, fast, and effective."
     columns={3}
     items={[
       {
-        title: 'Modern and Professional Design',
-        description:
-          'Have a contemporary design that reflects current design trends and gives a professional impression.',
-        icon: 'tabler:artboard',
-      },
-      {
-        title: 'Responsive and Mobile-Friendly',
-        description: 'Adapt seamlessly to different screen sizes and devices to ensure a consistent experience.',
-        icon: 'tabler:picture-in-picture',
-      },
-      {
-        title: 'Customizability',
-        description:
-          'Easily customizable, allowing users to adapt the design, colors, typography, and content to match their brand identity.',
-        icon: 'tabler:adjustments-horizontal',
-      },
-      {
-        title: 'Fast Loading Times',
-        description: 'Optimized for speed to ensure a smooth user experience and favorable search engine rankings.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          'Incorporate SEO best practices in template structure and code to improve visibility in search engine results.',
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Compatibility',
-        description: 'The templates work seamlessly across various content management systems and website builders.',
-        icon: 'tabler:plug-connected',
-      },
+  title: 'Domain & Email Setup',
+  description:
+    'We help you secure your domain and set up professional business email addresses for a stronger brand identity.',
+  icon: 'tabler:network',
+},
+{
+  title: 'Performance Optimization',
+  description:
+    'We optimize your website’s speed, images, and code to ensure fast loading times and a smooth user experience.',
+  icon: 'tabler:adjustments-horizontal',
+},
+{
+  title: 'Analytics & Tracking Setup',
+  description:
+    'We integrate tools like Google Analytics to track visitor behavior and provide insights to improve your website.',
+  icon: 'tabler:brand-google-analytics',
+},
+{
+  title: 'Social Media Integration',
+  description:
+    'We connect your website with Facebook, Instagram, TikTok, and other platforms to boost your online reach.',
+  icon: 'tabler:social',
+},
+{
+  title: 'Graphic Design & Branding',
+  description:
+    'From logos to social media graphics, we design visual assets that match your brand and enhance your website.',
+  icon: 'tabler:photo',
+},
+{
+  title: 'Basic Training & Documentation',
+  description:
+    'We provide simple guides and training so you can confidently update and manage your website on your own.',
+  icon: 'tabler:file-type-doc',
+},
     ]}
   />
 
@@ -189,35 +193,29 @@ const metadata = {
     title="Frequently Asked Questions"
     items={[
       {
-        title: 'What are landing page templates?',
-        description:
-          'Landing page templates are pre-designed web page layouts that are specifically created to serve as a foundation for building effective landing pages. These templates are designed to capture the attention of visitors and guide them towards a specific action or goal, such as signing up for a newsletter, making a purchase, or downloading a resource.',
+        title: "Why does my business need a website?",
+        description: "A website is your digital storefront, helping customers find your products or services online anytime, anywhere."
       },
       {
-        title: 'Why should I use a template?',
-        description:
-          'Some of the advantages are that they provide a ready-to-use structure,  saving you significant time. Are designed with user-friendliness in mind and provide a cost-effective alternative, saving you money while still delivering a quality result.',
+        title: "Can a website help attract more customers?",
+        description: "Yes. A well-designed website improves visibility on search engines, allowing potential customers to discover your business."
       },
       {
-        title: 'Can I preview templates before buying?',
-        description:
-          'Yes, the templates allow you to preview them before making a purchase. There is a "Demo" button associated with each template.',
+        title: "Does having a website improve credibility?",
+        description: "Absolutely. Customers often trust businesses with professional websites more than those without an online presence."
       },
       {
-        title: 'Do I need technical skills to use a template?',
-        description:
-          'Advanced technical skills are not required to use a template, but having a basic understanding of web navigation and familiarity with using online tools can still be beneficial. If you have more specific customization needs, you might need to consult guides or reach out to customer support for assistance.',
+        title: "How can a website help my business grow?",
+        description: "A website enables online sales, lead generation, and marketing campaigns, helping your business reach new markets and increase revenue."
       },
       {
-        title: 'Can I use the template on multiple websites?',
-        description:
-          'No, the template comes with a single-use license, meaning you can use the template on one website or project only. Using the template on additional websites would require purchasing additional licenses.',
+        title: "Is a website necessary for competing in my industry?",
+        description: "Most competitors have websites, so having one ensures you stay relevant and competitive in the digital marketplace."
       },
       {
-        title: 'What if I need help with customization?',
-        description:
-          "The templates provides a comprehensive step-by-step guide that walk you through the customization process. If you still have doubts, you can reach out to our customer support team. They can answer your questions, provide guidance on customization, and address any issues you're facing.",
-      },
+        title: "Can a website support customer engagement?",
+        description: "Yes. Websites allow customers to contact you, learn about your services, read testimonials, and engage with your brand online."
+      }
     ]}
   >
     <Fragment slot="bg">
@@ -230,7 +228,7 @@ const metadata = {
   <Features3
     title="Let us know how we can help"
     subtitle="We’re here to help and answer any question you might have."
-    columns={4}
+    columns={3}
     items={[
       {
         title: 'Phone',
@@ -238,7 +236,7 @@ const metadata = {
         callToAction: {
           
           text: 'Call us',
-          href: '/',
+          href: '/contact',
           variant: 'link',
         },
       },
@@ -248,27 +246,17 @@ const metadata = {
         callToAction: {
           
           text: 'Write to us',
-          href: '/',
+          href: '/contact',
           variant: 'link',
         },
       },
       {
-        title: 'Chat with sales',
+        title: 'Chat with us',
         icon: 'tabler:message-circle',
         callToAction: {
-          
+          target:"_blank",
           text: 'Start chatting',
-          href: '/',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Chat with support',
-        icon: 'tabler:message-circle',
-        callToAction: {
-          
-          text: 'Start chatting',
-          href: '/',
+          href: 'https://www.facebook.com/dwds.ph/',
           variant: 'link',
         },
       },
@@ -287,11 +275,10 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title">Be a part of our vision</Fragment>
+    <Fragment slot="title">Join Us on Our Journey</Fragment>
 
     <Fragment slot="subtitle">
-      Discover a dynamic work environment, unparalleled growth opportunities, and the chance to make a meaningful
-      impact.
+      Discover a dynamic partnership where your goals drive our solutions, and together we create lasting impact.
     </Fragment>
   </CallToAction>
 </Layout>
