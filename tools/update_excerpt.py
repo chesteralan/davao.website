@@ -1,5 +1,4 @@
 import os
-from default_api import web_fetch
 
 # Read the list of files from the temporary file
 with open('temp_file_list.txt', 'r') as f:
