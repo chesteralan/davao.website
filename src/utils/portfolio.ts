@@ -46,7 +46,16 @@ export const fetchPortfolios = async (): Promise<Array<Portfolio>> => {
 
 export const getStaticPathsPortfolioList = async ({ paginate }: { paginate: PaginateFunction }) => {
   return paginate(await fetchPortfolios(), {
-    params: { blog: BLOG_BASE || undefined },
-    pageSize: blogPostsPerPage,
+    params: { portfolio: 'portfolio' },
+    pageSize: 10,
   });
+};
+
+export const getStaticPathsPortfolioPost = async () => {
+  return (await fetchPortfolios()).flatMap((portfolio) => ({
+    params: {
+      portfolio: portfolio.slug,
+    },
+    props: { portfolio },
+  }));
 };
