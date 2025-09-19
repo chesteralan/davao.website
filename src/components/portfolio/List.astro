@@ -1,0 +1,20 @@
+---
+import Item from '~/components/portfolio/ListItem.astro';
+import type { Portfolio } from '~/types';
+
+export interface Props {
+  portfolios: Array<Portfolio>;
+}
+
+const { portfolios } = Astro.props;
+---
+
+<ul>
+    {
+      portfolios.map((portfolio) => (
+        <li class="mb-12 md:mb-20">
+          <Item portfolio={portfolio} />
+        </li>
+      ))
+    }
+  </ul>

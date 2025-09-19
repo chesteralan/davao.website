@@ -19,9 +19,9 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline={portfolio.title}
-    title="Long-form Sales: Sell with a Story: The Long-form Way!"
-    subtitle="Dive deep into crafting a Landing Page that narrates, persuades, and converts."
+    tagline={portfolio.category}
+    title={portfolio.title}
+    subtitle={portfolio.excerpt}
     actions={[
       {
         variant: 'primary',
@@ -30,7 +30,6 @@ const metadata = {
         icon: 'tabler:square-rounded-arrow-right',
         target: '_blank',
       },
-      { text: 'Learn more', href: `/portfolio/${portfolio.slug}` },
     ]}
     image={{
       src: portfolio.image,

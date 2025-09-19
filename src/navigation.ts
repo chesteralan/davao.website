@@ -38,6 +38,7 @@ export const footerData = {
         { text: 'About', href: getPermalink('/about') },
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Services', href: getPermalink('/#services') },
+        { text: 'Portfolio', href: getPermalink('/portfolio') },
       ],
     },
   ],
