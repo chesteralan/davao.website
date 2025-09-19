@@ -3,11 +3,11 @@ import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
 
 import Layout from '~/layouts/PageLayout.astro';
 import Headline from '~/components/blog/Headline.astro';
-import Pagination from '~/components/blog/Pagination.astro';
-// import PostTags from "~/components/blog/Tags.astro";
+import Pagination from '~/components/portfolio/Pagination.astro';
 
 import { blogListRobots } from '~/utils/blog';
 import { getStaticPathsPortfolioList } from '~/utils/portfolio';
+import PortfolioList from '~/components/portfolio/List.astro';
 
 export const prerender = true;
 
@@ -39,7 +39,7 @@ const metadata = {
     >
       Our Work, Your Inspiration
     </Headline>
-
+    <PortfolioList portfolios={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
     <!--
       <PostTags tags={allCategories} class="mb-2" title="Search by Categories:" isCategory />

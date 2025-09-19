@@ -46,7 +46,7 @@ export const fetchPortfolios = async (): Promise<Array<Portfolio>> => {
 export const getStaticPathsPortfolioList = async ({ paginate }: { paginate: PaginateFunction }) => {
   return paginate(await fetchPortfolios(), {
     params: { portfolio: 'portfolio' },
-    pageSize: 10,
+    pageSize: 6,
   });
 };
 
