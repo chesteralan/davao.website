@@ -13,7 +13,6 @@ const { portfolio } = Astro.props;
 const metadata = {
   title: portfolio.title,
 };
-
 ---
 
 <Layout metadata={metadata}>
@@ -24,7 +23,13 @@ const metadata = {
     title="Long-form Sales: Sell with a Story: The Long-form Way!"
     subtitle="Dive deep into crafting a Landing Page that narrates, persuades, and converts."
     actions={[
-      { variant: 'primary', text: 'Visit Website', href: portfolio.metadata?.canonical, icon: 'tabler:square-rounded-arrow-right', target: '_blank' },
+      {
+        variant: 'primary',
+        text: 'Visit Website',
+        href: portfolio.metadata?.canonical,
+        icon: 'tabler:square-rounded-arrow-right',
+        target: '_blank',
+      },
       { text: 'Learn more', href: `/portfolio/${portfolio.slug}` },
     ]}
     image={{
@@ -32,5 +37,4 @@ const metadata = {
       alt: portfolio.title,
     }}
   />
-
 </Layout>

@@ -1,6 +1,5 @@
 import type { PaginateFunction } from 'astro';
-import { BLOG_BASE, cleanSlug } from './permalinks';
-import { blogPostsPerPage } from './blog';
+import { cleanSlug } from './permalinks';
 import type { Portfolio } from '~/types';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
