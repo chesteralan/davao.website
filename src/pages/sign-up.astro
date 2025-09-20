@@ -1,8 +1,8 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
-import TechnicalFaqs from '~/components/common/TechnicalFaqs.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Contact',
@@ -10,35 +10,97 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
+  <Hero tagline="Pro Bono Program">
+    <Fragment slot="title">
+      Giving back through the web — <span class="text-accent dark:text-white"
+        >helping local communities and businesses</span
+      > shine online.
+    </Fragment>
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+    <Fragment slot="subtitle">
+      At DWDS, we believe every organization deserves a strong online presence, no matter their budget. That’s why we
+      created our Pro Bono Program—offering free or discounted website development for nonprofits, community groups, and
+      impact-driven startups in Davao and beyond.
+    </Fragment>
+  </Hero>
 
-  <ContactUs
-    id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
+  <Steps2
+    isReversed={false}
+    title="Who Can Apply?"
+    subtitle="We open our doors to:"
+    items={[
       {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
+        title: 'Nonprofits & Charities',
+        description: 'supporting social causes and community development.',
       },
       {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
+        title: 'Startups & Small Businesses',
+        description: 'especially those with a positive local or social impact.',
+      },
+      {
+        title: 'Community Organizations',
+        description: 'groups making a difference in people’s lives.',
       },
     ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
   />
 
-  <TechnicalFaqs />
+  <Steps2
+    isReversed={false}
+    title="What’s Included?"
+    subtitle="Each selected project gets a free starter website that covers the essentials:"
+    items={[
+      {
+        title: '5 responsive pages max',
+        description: 'Home, About, Services, Portfolio, Contact',
+      },
+      {
+        title: 'Mobile-friendly design',
+        description: 'optimized for all devices.',
+      },
+      {
+        title: 'Basic SEO setup.',
+        description: 'optimized for search engines.',
+      },
+      {
+        title: '1–2 rounds of revisions.',
+        description: 'to ensure your website meets your expectations.',
+      },
+    ]}
+  />
+
+  <Steps2
+    isReversed={false}
+    title="Program Guidelines"
+    subtitle="To make this sustainable:"
+    items={[
+      {
+        title: 'We take one (1) pro bono project at a time.',
+        description: '',
+      },
+      {
+        title: 'We need 2–3 months to complete a project.',
+        description: '',
+      },
+      {
+        title: 'Projects are scheduled around paying clients.',
+        description: '',
+      },
+      {
+        title: 'Clear agreements ensure smooth collaboration.',
+        description: '',
+      },
+    ]}
+  />
+
+  <CallToAction
+    title="Why We Do This"
+    subtitle="By supporting local changemakers, we grow together. Every project strengthens our community and shows how the web can make an impact."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Apply for Pro Bono Website',
+        href: '/#form',
+      },
+    ]}
+  />
 </Layout>
