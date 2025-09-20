@@ -1,0 +1,24 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: 'Website Development',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    tagline="Custom Web Applications"
+    title="Web applications designed to move your business forward."
+    subtitle="Our custom web applications are designed to address your specific business needs—streamlining operations, improving efficiency, and supporting long-term growth."
+    actions={[
+      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
+      { text: 'Learn more', href: '#' },
+    ]}
+    video="https://cdn.davao.website/services/custom-web-applications.mp4"
+  />
+</Layout>

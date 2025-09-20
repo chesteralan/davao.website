@@ -7,6 +7,10 @@ export const headerData = {
       href: getPermalink('/about'),
     },
     {
+      text: 'Services',
+      href: getPermalink('/services'),
+    },
+    {
       text: 'Portfolio',
       href: getPermalink('/portfolio'),
     },
@@ -28,8 +32,8 @@ export const footerData = {
       title: 'Services',
       links: [
         { text: 'Website Development', href: getPermalink('/services/website-development') },
-        { text: 'Website Maintenance & Hosting', href: getPermalink('/services/maintenance-hosting') },
-        { text: 'Custom Web Applications', href: getPermalink('/services/custom-applications') },
+        { text: 'Website Maintenance & Hosting', href: getPermalink('/services/website-maintenance-hosting') },
+        { text: 'Custom Web Applications', href: getPermalink('/services/custom-web-applications') },
       ],
     },
     {
