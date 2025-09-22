@@ -23,7 +23,7 @@ export const headerData = {
       href: getPermalink('/contact'),
     },
   ],
-  actions: [{ text: 'Sign Up', href: getPermalink('/sign-up') }],
+  actions: [{ text: 'Client Portal', href: getPermalink('/client-portal') }],
 };
 
 export const footerData = {

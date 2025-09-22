@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: DWDS — Davao Web Development Services
     images:
-      - url: '~/assets/images/default.png'
+      - url: 'https://cdn.davao.website/blog/blog1.jpeg'
         width: 1200
         height: 628
     type: website

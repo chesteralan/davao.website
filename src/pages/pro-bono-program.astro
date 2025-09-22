@@ -1,0 +1,113 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Contact',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero tagline="Pro Bono Program">
+    <Fragment slot="title">
+      Giving back through the web — <span class="text-accent dark:text-white"
+        >helping local communities and businesses</span
+      > shine online.
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      At DWDS, we believe every organization deserves a strong online presence, no matter their budget. That’s why we
+      created our Pro Bono Program—offering free or discounted website development for nonprofits, community groups, and
+      impact-driven startups in Davao and beyond.
+    </Fragment>
+  </Hero>
+
+  <Steps2
+    isReversed={false}
+    title="Who Can Apply?"
+    subtitle="We welcome applications from:"
+    items={[
+      {
+        title: 'Nonprofits & Charities',
+        description:
+          'Organizations dedicated to social causes, community development, and creating lasting positive change.',
+      },
+      {
+        title: 'Startups & Small Businesses',
+        description:
+          'Emerging businesses, especially those driving local growth or promoting meaningful social impact.',
+      },
+      {
+        title: 'Community Organizations',
+        description: 'Grassroots groups and associations working to uplift communities and improve people’s lives.',
+      },
+    ]}
+  />
+
+  <Steps2
+    isReversed={false}
+    title="What’s Included?"
+    subtitle="Every chosen project gets a free starter website with the basics you need to get online:"
+    items={[
+      {
+        title: 'Up to 5 Pages',
+        description: 'Think Home, About, Services, Portfolio, and Contact—or whatever works best for you.',
+      },
+      {
+        title: 'Mobile-Friendly Design',
+        description: 'A clean, modern look that works beautifully on phones, tablets, and desktops.',
+      },
+      {
+        title: 'Basic SEO Setup',
+        description: 'Simple optimization so people can easily find you on search engines.',
+      },
+      {
+        title: '1–2 Rounds of Revisions',
+        description: 'Room for tweaks and adjustments until it feels just right.',
+      },
+    ]}
+  />
+
+  <Steps2
+    isReversed={false}
+    title="Program Guidelines"
+    subtitle="To keep this program sustainable and meaningful for everyone, here’s how it works:"
+    items={[
+      {
+        title: 'One Project at a Time',
+        description:
+          'We can only take on one pro bono project at once. New applications are scheduled after the current project is completed.',
+      },
+      {
+        title: '2–3 Month Timeline',
+        description:
+          'Each project takes about 2–3 months, giving us time for planning, design, development, revisions, and a smooth launch.',
+      },
+      {
+        title: 'Paying Clients Come First',
+        description:
+          'Since paying clients keep our lights on, their projects are prioritized. Pro bono work is scheduled around them.',
+      },
+      {
+        title: 'Clear and Simple Agreements',
+        description:
+          'We’ll provide straightforward agreements and timelines so expectations are clear, making collaboration smooth and stress-free.',
+      },
+    ]}
+  />
+
+  <CallToAction
+    title="Why We Do This"
+    subtitle="We’re here to champion local changemakers! Every project is a chance to spark growth, fuel ideas, and show how the web can make a real difference in our communities."
+    tagline2="Let’s build something that matters."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Apply for Pro Bono Website',
+        href: '/#form',
+      },
+    ]}
+  />
+</Layout>
