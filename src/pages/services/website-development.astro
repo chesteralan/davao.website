@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Brands from '~/components/widgets/Brands.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'Website Development',
@@ -17,7 +18,7 @@ const metadata = {
     title="Your business deserves a website that shines online."
     subtitle="We create websites that blend modern design with reliable performance—helping your business stand out, connect with customers, and grow online."
     actions={[
-      { variant: 'primary', text: 'See Pricing', href: '/pricing', icon: 'tabler:square-rounded-arrow-right' },
+      { variant: 'primary', text: 'Contact Us', href: '/contact', icon: 'tabler:square-rounded-arrow-right' },
       { text: 'Learn more', href: '#learn-more' },
     ]}
     video="https://cdn.davao.website/services/website-development.mp4"
@@ -62,4 +63,45 @@ const metadata = {
       },
     ]}
   />
+
+  <FAQs
+  title="Frequently Asked Questions"
+  items={[
+    {
+      title: 'Why does my business need a professional website?',
+      description:
+        'A professional website builds credibility, attracts customers, and helps your business stay competitive online.',
+    },
+    {
+      title: 'How can a website help my business grow?',
+      description:
+        'It increases visibility, enables online sales or lead generation, and helps you connect with more customers.',
+    },
+    {
+      title: 'Will my website work on mobile devices?',
+      description:
+        'Yes. We build responsive websites that look great and function smoothly on desktops, tablets, and smartphones.',
+    },
+    {
+      title: 'Can you customize the design to match my brand?',
+      description:
+        'Absolutely. Every website we create is tailored to reflect your brand identity, voice, and business goals.',
+    },
+    {
+      title: 'Will my website be optimized for search engines (SEO)?',
+      description:
+        'Yes. We use SEO best practices to help your website rank better on Google and attract more organic traffic.',
+    },
+    {
+      title: 'Do you provide ongoing website maintenance?',
+      description:
+        'Yes. We offer updates, security monitoring, and technical support to keep your website running smoothly.',
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</FAQs>
+
 </Layout>

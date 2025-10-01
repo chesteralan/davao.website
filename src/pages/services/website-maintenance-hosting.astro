@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Brands from '~/components/widgets/Brands.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'Website Maintenance & Hosting',
@@ -17,7 +18,7 @@ const metadata = {
     title="Strong hosting, smarter maintenance."
     subtitle="We’ll handle the updates, backups, and security—so you can focus on running your business while your website runs smoothly in the background."
     actions={[
-      { variant: 'primary', text: 'See Pricing', href: '/pricing', icon: 'tabler:square-rounded-arrow-right' },
+      { variant: 'primary', text: 'Contact Us', href: '/contact', icon: 'tabler:square-rounded-arrow-right' },
       { text: 'Learn more', href: '#learn-more' },
     ]}
     video="https://cdn.davao.website/services/website-maintenance-hosting.mp4"
@@ -50,4 +51,45 @@ const metadata = {
       },
     ]}
   />
+
+  <FAQs
+  title="Frequently Asked Questions"
+  items={[
+    {
+      title: 'Why do I need website maintenance and hosting?',
+      description:
+        'Reliable hosting ensures your website is always accessible, while maintenance keeps it updated, secure, and running smoothly.',
+    },
+    {
+      title: 'What’s included in your website maintenance service?',
+      description:
+        'We handle software updates, security patches, backups, and performance monitoring to keep your site in top shape.',
+    },
+    {
+      title: 'How do backups protect my business?',
+      description:
+        'Regular backups mean your website can be quickly restored if anything goes wrong—keeping downtime and data loss to a minimum.',
+    },
+    {
+      title: 'Will my website be secure?',
+      description:
+        'Yes. We implement best practices like SSL certificates, malware protection, and ongoing monitoring to safeguard your site.',
+    },
+    {
+      title: 'Do you offer scalable hosting plans?',
+      description:
+        'Absolutely. We provide hosting solutions that grow with your business, from small sites to high-traffic platforms.',
+    },
+    {
+      title: 'Can I focus on my business while you handle everything?',
+      description:
+        'Yes. Our goal is to take care of the technical side—so you can focus on growth while your website stays reliable in the background.',
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</FAQs>
+
 </Layout>

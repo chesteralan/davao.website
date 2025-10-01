@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'Website Development',
@@ -16,9 +17,60 @@ const metadata = {
     title="Web applications designed to move your business forward."
     subtitle="Our custom web applications are designed to address your specific business needs—streamlining operations, improving efficiency, and supporting long-term growth."
     actions={[
-      { variant: 'primary', text: 'See Pricing', href: '/pricing', icon: 'tabler:square-rounded-arrow-right' },
+      { variant: 'primary', text: 'Contact Us', href: '/contact', icon: 'tabler:square-rounded-arrow-right' },
       { text: 'Learn more', href: '#learn-more' },
     ]}
     video="https://cdn.davao.website/services/custom-web-applications.mp4"
   />
+
+  <FAQs
+  title="Frequently Asked Questions"
+  items={[
+    {
+      title: 'What is a custom web application?',
+      description:
+        'A custom web application is software built specifically for your business needs. Unlike off-the-shelf tools, it’s designed to match your unique workflows, goals, and long-term growth plans.',
+    },
+    {
+      title: 'How can a custom web application help my business?',
+      description:
+        'It streamlines operations, automates manual tasks, reduces errors, and improves efficiency—freeing up time to focus on growth and customer experience.',
+    },
+    {
+      title: 'What’s the difference between a website and a web application?',
+      description:
+        'A website mainly shares information, while a web application is interactive and performs functions like dashboards, portals, booking systems, or CRMs.',
+    },
+    {
+      title: 'Can a custom web application integrate with my existing tools?',
+      description:
+        'Yes. We can connect your app with CRMs, ERPs, payment gateways, and APIs so your systems work seamlessly together.',
+    },
+    {
+      title: 'How secure are your web applications?',
+      description:
+        'Security is built in from the ground up—using data encryption, role-based access, and industry best practices to protect your business and customers.',
+    },
+    {
+      title: 'How long does it take to build a custom web application?',
+      description:
+        'Timelines vary depending on complexity. Simple apps may take 6–8 weeks, while more advanced systems could take several months. We’ll provide a clear timeline after discovery.',
+    },
+    {
+      title: 'Will my application be able to scale as my business grows?',
+      description:
+        'Yes. We design applications with scalability in mind so they can handle more users, data, and features as your business expands.',
+    },
+    {
+      title: 'Do you provide ongoing support after launch?',
+      description:
+        'Absolutely. We offer maintenance, updates, and feature enhancements to keep your application running smoothly and delivering long-term value.',
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</FAQs>
+  
 </Layout>
