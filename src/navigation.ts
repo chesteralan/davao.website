@@ -23,7 +23,7 @@ export const headerData = {
       href: getPermalink('/contact'),
     },
   ],
-  actions: [{ text: 'Client Portal', href: getPermalink('/client-portal') }],
+  actions: [{ text: 'Client Portal', href: "http://client.davao.website/" }],
 };
 
 export const footerData = {
@@ -41,7 +41,7 @@ export const footerData = {
       links: [
         { text: 'About', href: getPermalink('/about') },
         { text: 'Blog', href: getBlogPermalink() },
-        { text: 'Services', href: getPermalink('/#services') },
+        { text: 'Services', href: getPermalink('/services') },
         { text: 'Portfolio', href: getPermalink('/portfolio') },
       ],
     },
